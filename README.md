@@ -1,3 +1,6 @@
+<!-- #** MAGAZINE ---<SUBSCRIPTIONS>---READER**
+
+
 # Object Relations Practice Code Challenge - Magazines
 
 For this assignment, we'll be working with a Magazine domain.
@@ -8,19 +11,21 @@ For our purposes, a `Magazine` has many `Subscription`s, a `Reader` has many `Su
 
 `Magazine` - `Reader` is a many to many relationship.
 
+** MAGAZINE ---<SUBSCRIPTIONS>---READER** -->
+<!-- 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
 ## Topics
 
 - Active Record Migrations
 - Object Relationships
-- Active Record Queryng
-
+<!-- - Active Record Queryng -->
+<!-- 
 ## Instructions
 
-To get started, run `bundle install` while inside of this directory.
-
-Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones.
+**To get started, run `bundle install` while inside of this directory. --> -->complete
+<!-- 
+Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones. -->
 
 **Remember!** This code challenge does not have tests. You cannot run `rspec` and you cannot run `learn`. You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
 
@@ -35,17 +40,8 @@ Similarly, messy code that works is better than clean code that doesn't. First, 
 ## What You Already Have
 
 The starter code has migrations and models for the initial `Reader`, `Magazine` and `Subscription` models, and seed data for some `Reader`s and `Magazine`s. The schema currently looks like this: 
+ 
 
-#### `readers` Table
-| Column      | Type      |
-| ------------| ----------|
-| name        | String    |
-| email       | String    |
-
-#### `magazines` Table
-| Column                | Type      |
-| -----------           | --------- |
-| title                 | String    |
 
 You will need to create the migration for the `subscriptions` table using the attributes specified in the deliverables below.
 
@@ -61,8 +57,14 @@ Remember: Active Record give your classes access to a lot of built-in methods! K
 
 Before working on the rest of the deliverables, you will need to create a migration for the `subscriptions` table. 
 
+
 - A `Subscription` belongs to a `Magazine`, and a `Subscription` also belongs to an `Reader`. In your migration, create any columns your `subscriptions` table will need to establish these relationships.
+
+
+
   - The `subscriptions` table should also have a `price` column that stores an integer.
+
+  
 
 After creating your migration, use the `seeds.rb` file to create instances of your `Subscription` class so you can test your code.
 
@@ -72,26 +74,6 @@ After creating your migration, use the `seeds.rb` file to create instances of yo
 
 Use Active Record association macros and Active Record query methods where appropriate (i.e. `has_many`, `has_many through`, and `belongs_to`).
 
-#### Subscription
-
-- `Subscription#reader`
-  - should return the `Reader` instance for this subscription
-- `Subscription#magazine`
-  - should return the `Magazine` instance for this subscription
-
-#### Magazine
-
-- `Magazine#subscriptions`
-  - returns a collection of all `Subscription` instances for this magazine
-- `Magazine#readers`
-  - returns a collection of all `Reader` instances who are subscribed to this magazine
-
-#### Reader
-
-- `Reader#subscriptions`
-  - should return a collection of all `Subscription` instances for this reader
-- `Reader#magazines`
-  - should return a collection of all `Magazine` instances that this reader is subscribed to
 
 ### Aggregate and Association Methods
 
@@ -151,3 +133,7 @@ Use Active Record association macros and Active Record query methods where appro
 3. Some collections methods work correctly, though several might be unimplemented. Code may not use the appropriate built in method for each problem, or duplicate logic instead of using helper methods.
 4. All collections methods are implemented and function correctly. Most use appropriate higher-level built-in methods. Methods may duplicate logic instead of using helper methods.
 5. All collections methods implemented and function correctly, using appropriate higher-level built-in methods. Shared logic is factored out to helper methods.
+
+#########PROJECT 1 #################
+
+For our purposes, a `Magazine` has many `Subscription`s, a `Reader` has many `Subscription`s, and a `Subscription` belongs to a `Magazine` and to an `Reader`.
