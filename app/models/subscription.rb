@@ -9,19 +9,7 @@ class Subscription < ActiveRecord::Base
 end
 
 #question - foreign keys? 
-
+# no subscriptions?1 
 
  
 #** MAGAZINE ---<SUBSCRIPTIONS>---READER**
-
-
-#  class Subscription < ActiveRecord::Migration[5.0]
-#   def change
-#     create_table :subscriptions do |t|
-#       t.integer :name
-#      
-#       t.timestamps
-#     end
-#   end
-# end
-

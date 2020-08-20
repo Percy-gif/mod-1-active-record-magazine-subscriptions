@@ -1,8 +1,8 @@
 class Magazine < ActiveRecord::Base
 
-    magazine has_many :subscriptions  
-    #subscription belongs_to :magazine  #=>(foreign_key - magazine)
-
+     has_many :subscriptions  
+     has_many :readers, through: :subscriptions
+ 
 end
 
  

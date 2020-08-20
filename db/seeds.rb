@@ -1,9 +1,11 @@
 puts "Clearing old data..."
+
 Magazine.destroy_all
 Reader.destroy_all
 
 puts "Seeding magazines..."
 magazines = ["The New Yorker", "National Geographic", "Wired", "People", "Cosmopolitan", "Time", "US Weekly", "New York Magazine"]
+
 # Create sample magazines
 magazines.each do |magazine|
   Magazine.create(title: magazine)
@@ -27,7 +29,18 @@ puts "Seeding subscriptions..."
 
   # TODO: create subscriptions! Remember, a subscription belongs to a reader
   # and a subscription belongs to a magazine.
+
+# s1 = Student.create(name: "Bob", age: 21, email: "Tom@gmail.com")
+# s2 = User.create(name: "Rob", age: 22, email: "Rob@gmail.com")
+# s3 = User.create(name: "Tammy", age: 23, "Tammy@gmail.com")
+# puts = "Done!"
+
+
+
+
+
+
+
   
 end
-
 puts "Done!"

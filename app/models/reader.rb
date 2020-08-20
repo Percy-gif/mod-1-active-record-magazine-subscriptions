@@ -1,8 +1,8 @@
 class Reader < ActiveRecord::Base
   
-    reader has_many :subscriptions 
-    #subscription belongs_to :reader
-
+    has_many :subscriptions 
+    has_many :magazines, through: :subscriptions
+    
 end
 
 
